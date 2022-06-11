@@ -1,40 +1,46 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
     background-color: #faf8f8;
-    font-family: "montserrat",sans-serif;
+    font-family: "montserrat", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.container{
+
+.container {
     text-align: center;
 }
-h2{
+
+h2 {
     padding: 30px 0;
     font-size: 30px;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
 }
-.time{
+
+.time {
     display: inline-block;
     position: relative;
     margin: 10px;
-    -webkit-box-reflect:below 1px linear-gradient(transparent,transparent,#00000050) ;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #00000050);
 }
-.time span{
+
+.time span {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.time span:nth-child(1){
+
+.time span:nth-child(1) {
     width: 155px;
     height: 50px;
     color: #faf8f8;
@@ -44,29 +50,67 @@ h2{
     text-align: center;
     text-transform: uppercase;
 }
-.time:nth-of-type(2) span:nth-of-type(1){
+
+.time:nth-of-type(2) span:nth-of-type(1) {
     background-color: #6fb40a;
 }
-.time:nth-of-type(3) span:nth-of-type(1){
+
+.time:nth-of-type(3) span:nth-of-type(1) {
     background-color: #c54800;
 }
+
 .time:nth-of-type(4) span:nth-child(1) {
     background-color: #22a568;
-  }
-  .time span:nth-child(2){
+}
+
+.time span:nth-child(2) {
     height: 150px;
     color: #faf8f8;
     background-color: #00b2cb;
     font-size: 90px;
     font-weight: 700;
-   
+
 }
-.time:nth-of-type(2) span:nth-of-type(2){
+
+.time:nth-of-type(2) span:nth-of-type(2) {
     background-color: #8ee80e;
 }
-.time:nth-of-type(3) span:nth-of-type(2){
+
+.time:nth-of-type(3) span:nth-of-type(2) {
     background-color: #ff5d00;
 }
+
 .time:nth-of-type(4) span:nth-child(2) {
     background-color: #2ad587;
-  }
+}
+
+@media screen and (max-width:720px) {
+    .time span:nth-child(2) {
+        height: 100px;
+        font-size: 53px;
+        font-weight: 600;
+    }
+
+    .time span:nth-child(1) {
+        width: 106px;
+        height: 50px;
+        font-size: 21px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .time span:nth-child(2) {
+        height: 69px;
+        font-size: 37px;
+        font-weight: 600;
+    }
+    .time span:nth-child(1) {
+        width: 64px;
+        height: 40px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+
+}
